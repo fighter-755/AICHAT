@@ -8,7 +8,7 @@ let userMessage = null;
 let isResponseGenerating = false;
 
 // API configuration
-const API_KEY = "AIzaSyAz7Cc22lLRcLSR2XSF7lMot_91WxlXfYw"; // Your API key here
+const API_KEY = "https://chatgpt.com/c/6715f9b5-384c-800a-8b2e-139fae9ecdc6"; // Your API key here
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
 
 // Load theme and chat data from local storage on page load
