@@ -132,13 +132,11 @@
             overflow-y: auto;
             position: relative;
         }
+        
     </style>
 </head>
 <body>
-  <div class="container">
-    <button class="live-button" onclick="showLiveUsers()" class="mb-3" style="color: cyan;">ꜱʜᴏᴡ ʟɪᴠᴇ ᴜꜱᴇʀꜱ </button>
-    <ul class="user-list" id="user-list"></ul>
-  </div>
+
     <div class="login-container">
         <h2 class="mb-3" style="color: cyan;">ʟᴏɢɪɴ</h2>
         <form id="login-form">
@@ -151,8 +149,12 @@
             <button type="submit" class="mb-3" style="color: cyan;">ʟᴏɢɪɴ</button>
         </form>
 
+
+
         <div class="user-count">
             <h3 class="mb-3" style="color: cyan;">ᴜꜱᴇʀꜱ: <span id="user-count">0</span></h3>
+                    <button class="live-button" onclick="showLiveUsers()" class="mb-3" style="color: cyan;">ꜱʜᴏᴡ ʟɪᴠᴇ ᴜꜱᴇʀꜱ </button>
+                    <ul class="user-list" id="user-list"></ul>
         </div>
     </div>
 
