@@ -94,9 +94,51 @@
             overflow-y: auto;
             position: relative;
         }
+        
+        .live-button {
+            background-color: tran;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .live-button:hover {
+            background-color: transparent;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px white;
+            overflow-y: auto;
+            position: relative;
+        }
+        .user-list {
+            margin-top: 20px;
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px white;
+            overflow-y: auto;
+            position: relative;
+        }
+        .user-list li {
+            background-color: transparent;
+            color: white;
+            padding: 8px 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px white;
+            overflow-y: auto;
+            position: relative;
+        }
     </style>
 </head>
 <body>
+  <div class="container">
+    <button class="live-button" onclick="showLiveUsers()" class="mb-3" style="color: cyan;">ꜱʜᴏᴡ ʟɪᴠᴇ ᴜꜱᴇʀꜱ </button>
+    <ul class="user-list" id="user-list"></ul>
+  </div>
     <div class="login-container">
         <h2 class="mb-3" style="color: cyan;">ʟᴏɢɪɴ</h2>
         <form id="login-form">
@@ -141,6 +183,17 @@
                 alert("Please enter both username and password.");
             }
         });
+        function showLiveUsers() {
+          const userList = document.getElementById("user-list");
+          userList.innerHTML = ""; // Clear previous list if any
+        
+          // Generate list of 10 users (you can modify the count as needed)
+          for (let i = 1; i <= 1975; i++) {
+            const li = document.createElement("li");
+            li.textContent = `ᴜꜱᴇʀ : >> ${i}`;
+            userList.appendChild(li);
+          }
+        }
     </script>
 </body>
 </html>
